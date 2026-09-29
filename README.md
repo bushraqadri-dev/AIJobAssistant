@@ -72,5 +72,9 @@ Local AI integration
 Bushra Anis Qadri
 
 BCA Graduate | Python | SQL | Data Analytics | Software Development
+## 📸 Application Screenshots
+![Main Application](screenshots/app-main.png)
+
+![Job Application Tracker](screenshots/app-tracker.png)
 
 
