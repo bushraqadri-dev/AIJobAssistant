@@ -37,28 +37,26 @@ if st.button("Analyze Job Match"):
         )
 
         st.progress(int(match_percentage) / 100)
+st.write("### 📌 Required Skills")
 
-        st.write("### 📌 Required Skills")
-
-        if required_skills:
+if required_skills:
             for skill in required_skills:
                 st.info(skill)
-        else:
+else:
             st.info("No required skills detected.")
 
-        col1, col2 = st.columns(2)
+col1, col2 = st.columns(2)
 
-        with col1:
-            st.markdown("### ✅ Matched Skills")
+with col1:
+            st.markdown("### Matched Skills")
 
             if matched_skills:
                 for skill in matched_skills:
                     st.success(skill)
             else:
                 st.info("No matching skills found.")
-
-        with col2:
-            st.markdown("### ⚠️ Missing Skills")
+with col2:
+            st.markdown("### Missing Skills")
 
             if missing_skills:
                 for skill in missing_skills:
@@ -66,5 +64,5 @@ if st.button("Analyze Job Match"):
             else:
                 st.success("No missing skills!")
 
-    else:
-        st.warning("Please upload your resume and enter a job description.")
+
+                   
